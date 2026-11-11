@@ -32,7 +32,7 @@ flowchart LR
         subgraph TrustedRepositoryOrigins["Software repositories"]
             DebianRepositories["`**Debian**<br>Repositories`"]:::explicit_trust --> OSRepositories["`**[REDACTED]**<br>Repositories`"]:::explicit_trust
 
-            DebianRepositories --> DebianExtools["`**Debian extools**<br>Repository`"]:::explicit_trust
+            DebianRepositories --> DebianExtrepo["`**Debian extrepo**<br>Repository`"]:::explicit_trust
         end
 
         subgraph ExplicitlyTrustedSystemTools["Tools - Explicit trust"]
@@ -46,9 +46,9 @@ flowchart LR
         end
 
         subgraph ImplicitlyTrustedTools["Tools - Implicit trust"]
-            DebianExtools --> GitHubCLI["`**GitHub CLI**<br>Software attestation`"]:::implicit_trust
-            DebianExtools --> Mise["`**mise**<br>Package manager`"]:::implicit_trust
-            DebianExtools --> UV["`**uv**<br>Package manager`"]:::implicit_trust
+            DebianExtrepo --> GitHubCLI["`**GitHub CLI**<br>Software attestation`"]:::implicit_trust
+            DebianExtrepo --> Mise["`**mise**<br>Package manager`"]:::implicit_trust
+            DebianExtrepo --> UV["`**uv**<br>Package manager`"]:::implicit_trust
 
             SaasProvider --> SoftwareForge["`**[REDACTED]**<br>Software forge`"]:::implicit_trust
         end
