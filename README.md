@@ -14,6 +14,7 @@ Markdown and Mermaid are my tools of choice. They might not be the best option f
 ## Contents
 ### Backup host
 - [Backup synchronization](./doc/backup/synchronization.md)
+- [ZFS pool layout](./doc/backup/zfs_pool_layout.md)
 
 ### Security
 - [Supply chain risk](./doc/security/supply_chain_risk.md)
