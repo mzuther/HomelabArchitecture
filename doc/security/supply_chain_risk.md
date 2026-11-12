@@ -37,10 +37,11 @@ flowchart LR
 
         subgraph ExplicitlyTrustedSystemTools["Tools - Explicit trust"]
             OSRepositories --> APT["`**APT**<br>Package manager`"]:::explicit_trust
-            OSRepositories --> Shell["`**Shells**<br>Bash / sh`"]:::explicit_trust
+            OSRepositories --> Shells["`**Shells**<br>sh / Bash / SSH`"]:::explicit_trust
             OSRepositories --> Python["`**Python**<br>Programming language`"]:::explicit_trust
 
             OSRepositories --> DiskArchiver["`**Disk Archiver (DAR)**<br>Backup tool`"]:::explicit_trust
+            OSRepositories --> Rsync["`**rsync**<br>Backup tool`"]:::explicit_trust
             OSRepositories --> OpenZfs["`**OpenZFS**<br>Redundant file system`"]:::explicit_trust
             OSRepositories --> FileServer["`**[REDACTED]**<br>File server`"]:::explicit_trust
         end
