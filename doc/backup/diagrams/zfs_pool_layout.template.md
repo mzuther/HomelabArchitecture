@@ -1,0 +1,68 @@
+# ZFS pool layout
+## Host `file_server`
+- 🖴 **file_server** *→ mount point: `/file_server`*
+    - 🖴 **encrypt** *→ encryption at rest*
+        - 🖴 **home** *→ mount point: `/home`*
+            - 🖴 [REDACTED]
+            - 🖴 [REDACTED]
+        - 🖴 **mirror**
+            - 🖴 collection_sync
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+            - 🖴 media
+            - 🖴 media_transcoded
+        - 🖴 **primary**
+            - 🖴 collection
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+            - 🖴 samba_dfs
+    - 🖴 **plain** *→ no encryption (performance)*
+        - 🖴 **cache**
+            - 🖴 kubelet *→ mount point: `/var/lib/kubelet`*
+            - 🖴 rancher *→ mount point: `/var/lib/rancher`*
+        - 🖴 **mirror**
+            - 🖴 backup *→ encrypted during backup*
+                - 🖴 [REDACTED]
+
+
+## Host `linux_mirror`
+- 🖴 **linux_mirror** *→ mount point: `/linux_mirror`*
+    - 🖴 **encrypt** *→ encryption at rest*
+        - 🖴 **home** *→ mount point: `/home`*
+            - 🖴 [REDACTED]
+            - 🖴 [REDACTED]
+        - 🖴 **mirror**
+            - 🖴 collection
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+            - 🖴 collection_sync
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+                - 🖴 [REDACTED]
+        - 🖴 **primary**
+            - 🖴 media
+            - 🖴 media_transcoded
+    - 🖴 **plain** *→ no encryption (performance)*
+        - 🖴 backup *→ encrypted during backup*
+            - 🖴 online
+        - 🖴 virtual
+        - 🖴 swap
