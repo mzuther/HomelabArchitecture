@@ -17,7 +17,7 @@ I will use Markdown and Mermaid to do so. Although these tools might not be the 
 - [ZFS pool layout](./doc/backup/zfs_pool_layout.md)
 
 ### Security
-- [Supply chain risk](./doc/security/supply_chain_risk.md)
+- [Supply chain risk - Chain of trust](./doc/security/supply_chain_risk_chain_of_trust.md)
 - [Trust boundaries - Container images](./doc/security/trust_boundaries_container_images.md)
 - [Trust boundaries - GitOps](./doc/security/trust_boundaries_gitops.md)
 
