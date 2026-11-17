@@ -1,13 +1,13 @@
 # Architecture of my home lab
-I have never documented the design decisions and architecture of my home lab, which currently serves as:
+My home lab has been existing for a couple of years and currently serves as:
 
-- Media server and player
-- Backup host
-- Professional playground (of course)
+- media server and player
+- backup host with complex synchronization logic
+- professional playground (of course)
 
-However, I will start the documentation now, as an exercise.
+As an exercise, I will start documenting my design decisions and architecture here.
 
-Markdown and Mermaid are my tools of choice. They might not be the best option for an enterprise, but they are easy to use and quick to set up. For security reasons, some entries will be redacted automatically - which is another reason for using text-based tools.
+I will use Markdown and Mermaid to do so. Although these tools might not be the best option for an enterprise, they are easy to use and quick to set up. For security reasons, some entries will be redacted automatically - yet another reason for using text-based tools.
 
 *Enjoy!*
 
