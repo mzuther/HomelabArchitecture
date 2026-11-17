@@ -3,7 +3,7 @@
 
 ## Chain of trust
 ```mermaid
-flowchart LR
+flowchart TD
     classDef explicit_trust fill:DarkGreen;
     classDef implicit_trust fill:Navy;
     classDef unverified fill:Maroon;
