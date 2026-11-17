@@ -18,8 +18,8 @@ I will use Markdown and Mermaid to do so. Although these tools might not be the 
 
 ### Security
 - [Supply chain risk](./doc/security/supply_chain_risk.md)
-- [Trust boundaries - Container images](doc/security/trust_boundaries_container_images.md)
-
+- [Trust boundaries - Container images](./doc/security/trust_boundaries_container_images.md)
+- [Trust boundaries - GitOps](./doc/security/trust_boundaries_gitops.md)
 
 ## History
 ### 2026
